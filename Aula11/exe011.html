@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    Entre com a sua nacionalidade<input type="text" name="nac" id="nac">
+<body>  
+    <h1>Sistema de Nacionalidade</h1>
+    Local de nascimento: <input type="text" name="nas" id="nas">
     <input type="button" value="Verificar" onclick="verificar()">
     <div id="res">
 
     </div>
-    <script>
-        verificar(){
-            var nascionalidade = window.document.getElementById("nac")
-            var resposta = window.document.getElementById("res")
 
-            resposta.innerHTML = nascionalidade
+<script>
+    function verificar(){
+        var nascionalidade = window.document.getElementById("nas")
+        var resposta = window.document.getElementById("res")
+        var final = String(nascionalidade.value)     
+        res.innerHTML = `<p>Sua velocidade é: <strong>${final}</strong> Km/h</p>`
+        if(final == 'brasil'){
+            res.innerHTML = 'Brasileira'
+        }else{
+            res.innerHTML = 'Estrangeiro'
         }
+       
+    }
+</script>  
 
-    </script>
-    
 </body>
 </html>
