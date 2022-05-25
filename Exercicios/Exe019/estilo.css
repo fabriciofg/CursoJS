@@ -11,7 +11,7 @@ section{
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 900px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.418);
 }
@@ -20,3 +20,35 @@ footer{
     text-align: center;
     font-style: italic;
 }
+caption{
+    font: normal 17pt Arial;
+    font-weight: bold;
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 900px;
+}
+th{
+    background-color: lightgrey;
+}
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+th#nome{
+    width: 350px;
+}
+th#cpf{
+    width: 150px;
+}
+th#nascimento{
+    width: 50px;
+}
+th#telefone{
+    width: 50px;
+}
+th#email{
+    width: 300px;
+}
+

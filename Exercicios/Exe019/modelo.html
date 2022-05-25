@@ -13,27 +13,38 @@
     </header>
     <section>
         <div>
-            <p>Nome:
-                <input type="text" name="nome" id="nome">
-            </p>
-            <p>CPF:
-                <input type="text" name="cpf" id="cpf">
-            </p>
-            <p>Nascimento
-                <input type="date" name="nasc" id="nasc">
-            </p>
-            <p>Telefone:
-                <input type="tel" name="tel" id="tel">
-            </p>
-            <p>Email:
-                <input type="email" name="email" id="email">
-            </p>
             <p>
+                Nome:
+                <input type="text" name="nome" id="nome">
+                CPF:
+                <input type="text" name="cpf" id="cpf">
+                Nascimento
+                <input type="date" name="nasc" id="nasc">
+            </p>            
+            <p>
+                Telefone:
+                <input type="tel" name="tel" id="tel">
+                Email:
+                <input type="email" name="email" id="email">
                 <input type="button" value="Cadastrar" onclick="cadastrar()">
-            </p>
+            </p>         
+         
         </div>  
         <div id="res">
             <table>
+                <thead>
+                    <caption>Agenda</caption>
+                    <tr>
+                        <th id="nome">Nome</th>
+                        <th id="cpf">CPF</th>
+                        <th id="nascimento">Nascimento</th>
+                        <th id="telefone">Telefone</th>
+                        <th id="email">E-mail</th>
+                    </tr>
+                </thead>    
+                <tbody id="tabela">
+
+                </tbody>           
 
             </table>
         </div>         
