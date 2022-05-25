@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Nome:
+                <input type="text" name="nome" id="nome">
+                CPF:
+                <input type="text" name="cpf" id="cpf">
+                Nascimento
+                <input type="date" name="nasc" id="nasc">
+            </p>            
+            <p>
+                Telefone:
+                <input type="tel" name="tel" id="tel">
+                Email:
+                <input type="email" name="email" id="email">
+                <input type="button" value="Cadastrar" onclick="cadastrar()">
+            </p>         
+         
+        </div>  
+        <div id="res">
+            <table>
+                <thead>
+                    <caption>Agenda</caption>
+                    <tr>
+                        <th id="nome">Nome</th>
+                        <th id="cpf">CPF</th>
+                        <th id="nascimento">Nascimento</th>
+                        <th id="telefone">Telefone</th>
+                        <th id="email">E-mail</th>
+                    </tr>
+                </thead>    
+                <tbody id="tabela">
+
+                </tbody>           
+
+            </table>
+        </div>         
+    </section>
+    <footer>
+        <p>&copy; Curso em vídeo</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
