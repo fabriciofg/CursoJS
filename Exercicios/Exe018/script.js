@@ -45,20 +45,24 @@ function finalizar(){
         let soma = 0
         let media = 0    
         
-        
+        //Pega a quantidade de valores no arrey
         total= valores.length
 
         valores.sort()
 
-        maior = valores[total-1]
-
+        //Pega o menor e o mair valor
+        maior = valores[0]
         menor = valores[0]
-
-        for(let c = 0; c < total; c++){
-            soma = soma + valores[c] 
+        for(let c in valores){
+            soma += valores[c] // somando valores
+            if(valores[c] > maior) // pega o maior valor
+                maior = valores[c]
+            if(valores[c] < menor) // pega o menor valor
+                menor = valores[c]             
         }
 
-        media = soma / total
+
+        media = soma / total // calculando a média
 
 
 
